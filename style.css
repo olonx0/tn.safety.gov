@@ -579,6 +579,14 @@ input[type="text"]:focus {
     height: 22px;
 }
 
+.main-updated {
+    padding: 16px;
+    justify-content: center;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 @media (max-width:682px) {
     .card-body {
         flex-direction: column;
