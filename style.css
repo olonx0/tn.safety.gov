@@ -365,7 +365,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    width: 50%;
+    width: 100%;
 }
 
 .card-logos span {
@@ -580,7 +580,6 @@ input[type="text"]:focus {
 @media (max-width:682px) {
     .card-body {
         flex-direction: column;
-        width: 100%
     }
     .logo-box {
         height: 55px;
