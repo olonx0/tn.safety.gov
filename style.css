@@ -580,8 +580,9 @@ input[type="text"]:focus {
 @media (max-width:682px) {
     .card-body {
         flex-direction: column;
+        width: 100%
     }
     .logo-box {
-        height: 35px;
+        height: 55px;
     }
 }
