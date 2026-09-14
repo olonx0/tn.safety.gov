@@ -105,8 +105,9 @@ body {
 
 .main-container {
     padding: 16px;
-    max-width: 600px;
+    max-width: 1260px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .card-box {
