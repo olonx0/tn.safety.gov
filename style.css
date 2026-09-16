@@ -447,7 +447,7 @@ body {
     margin-bottom: 6px;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"], input[type="number"], input[type="tel"] {
     width: 100%;
     padding: 10px 12px;
     border: 1px solid #cbd5e1;
@@ -460,7 +460,7 @@ input[type="text"], input[type="number"] {
     transition: border-color 0.2s;
 }
 
-input[type="text"]:focus, input[type="number"]:focus {
+input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus {
     border-color: #64b5f6;
     box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.2);
 }
